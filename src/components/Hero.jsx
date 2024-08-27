@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className="absolute bottom-10 w-full flex justify-center items-center">
         <button
