@@ -8,7 +8,6 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
@@ -22,7 +21,15 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs,
+    pythonapp,
+    eventlite,
+    cms,
+    python,
+    java,
+    php,
+    sql,
+
+
   } from "../assets";
   
   export const navLinks = [
@@ -94,10 +101,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -106,60 +109,67 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "python",
+      icon: python,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "java",
+      icon: java,
+    },
+    {
+      name: "php",
+      icon: php,
+    },
+    {
+      name: "sql",
+      icon: sql,
     },
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Freelance Web Developer",
+      company_name: "Freelance",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Jan 2024 - Jul 2024 (7 months)",
+      points: [
+        "Collaborated with small/medium companies to deliver tailored solutions, including front-end projects such as advertising websites and back-end projects such as company management databases.",
+        "Worked with clients to ensure each product meets their specifications and needs, prioritising satisfaction and profitable outcomes.",
+      ],
+    },
+    {
+      title: "Mentee",
+      company_name: "GDG Academy",
+      icon: starbucks,
+      iconBg: "#383E56",
+      date: "Feb 2024 - Jul 2024 (6 months)",
+      points: [
+        "Mentored by a Software Engineer & Engineering Manager to learn agile methodologies (Scrum and Kanban), conduct code reviews, manage pull requests, and understand pipeline processes for continuous integration",
+        "Developed industry-standard practices including safe coding techniques, time management, and collaboration within cross-functional teams involving departments like marketing and product development.",
+      ],
+    },
+    {
+      title: "Simulations Team & Artificial Intelligence Engineer",
+      company_name: "Manchester Stinger Motorsports",
+      icon: tesla,
+      iconBg: "#E6DEDD",
+      date: "Oct 2023 - Aug 2024 (1 year)",
+      points: [
+        "Researched path planning and optimization, using computer vision, C++ and machine learning to train the car to learn and navigate race tracks",
+        "Experimented with using onboard cameras to allow the race car to create and follow racing lines based on real-time input.",
+      ],
+    },
+    {
+      title: "Software Engineer Intern",
+      company_name: "The Times, News UK",
+      icon: meta,
+      iconBg: "#E6DEDD",
+      date: "Jul 2024 - Aug 2024 (2 months)",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -168,16 +178,15 @@ import {
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Hackathon Organiser & Web Developer",
+      company_name: "UniCS Manchester",
+      icon: shopify,
+      iconBg: "#383E56",
+      date: "May 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Planning and handling the logistics for GreatUniHack, A Hackathon attended by ~250 students.",
+        "Managing a budget of £7,000 pounds across merchandise, venue, food, and equipment.",
+        "Developing the hackathon's website using Javascript & NextJS.",
       ],
     },
   ];
@@ -185,84 +194,150 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Meta Front-End Developer Specialisation",
+      name: "Issued August 2024",
+      designation: "7 months at 6 hours a week",
+      company: "Coursera",
+      image: "https://i.pinimg.com/736x/4b/0b/ac/4b0bacadee2847ccf95730127a1c8cb0.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+        "Computer Science Profesional Certification.",
+      name: "Issued April 2024",
+      designation: "2 months at 9 hours a week",
+      company: "Codecademy",
+      image: "https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/CC-logo-short.png?w=1000",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "Python 3 Beginner & Python 3 Intermediate Course.",
+      name: "Issued Feb 2024",
+      designation: "1 Month at 10 hours a week",
+      company: "Codecademy",
+      image: "https://www.codecademy.com/resources/blog/wp-content/uploads/2022/12/CC-logo-short.png?w=1000",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Interactive Property Listings Website",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The website includes a gallery that allows users to filter images based on category, a section describing all the amenities offered, a real-time apartment availability checker, and a 3D interactive map (built with the Mapbox API) featuring custom clickable icons.",
       tags: [
         {
-          name: "react",
+          name: "react.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "RestAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "tailwind css",
           color: "pink-text-gradient",
         },
       ],
       image: carrent,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/08mfp/rhodesville-villas",
     },
     {
-      name: "Job IT",
+      name: "Portfolio Website V1",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "My first attempt at a personal portfolio website which was built from scratch to showcase my skills and projects. Created using Typescript and NextJS.",
       tags: [
         {
-          name: "react",
+          name: "react.js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Vite",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "css",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/08mfp/react-portfolio",
     },
     {
-      name: "Trip Guide",
+      name: "Prayer Timings Website",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A website that includes status indicators (Now, Soon, Finished) to allow visitors to get a quick overview, and a countdown page to allow for journey planning, pulling data from a JSON file daily to update Prayer Times",
       tags: [
         {
-          name: "nextjs",
+          name: "react.js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JSON",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/08mfp/Galaxy-Visualisation-Website",
+    },
+    {
+      name: "Python Messaging Application",
+      description:
+        "A Python-based server and client application with GUIs using Tkinter and customtkinter libraries. The server GUI audits all messages and commands, while the client GUI facilitates user messaging.",
+      tags: [
+        {
+          name: "react.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JSON",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: pythonapp,
+      source_code_link: "https://github.com/08mfp/Python-Messaging-Program-V2",
+    },
+    {
+      name: "Events & Venue Management Website",
+      description:
+        "An Events & Venue Management Website, using Java and Spring framework for the backend operations. Enabled users to view upcoming and past events in their area and participate in discussions to promote community engagement",
+      tags: [
+        {
+          name: "Java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Spring",
           color: "green-text-gradient",
         },
         {
@@ -270,8 +345,29 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: eventlite,
+      source_code_link: "https://github.com/08mfp/eventlite",
+    },
+    {
+      name: "Company Management Database",
+      description:
+        "A company database website using SQL, PHP, HTML, and CSS to track employee records, product inventories, orders, delivery logistics, customer data, departmental structures, and (minimal) ex-employee data",
+      tags: [
+        {
+          name: "Java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Spring",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cms,
+      source_code_link: "https://github.com/08mfp/eventlite",
     },
   ];
   
