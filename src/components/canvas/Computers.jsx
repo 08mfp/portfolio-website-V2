@@ -5,25 +5,25 @@ import CanvasLoader from "../Loader";
 
 const Computers = () => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
-  const [scale, setScale] = useState(0.75); // Default scale
-  const [position, setPosition] = useState([0, -3.25, -1.5]); // Default position
+  const [scale, setScale] = useState(0.75);
+  const [position, setPosition] = useState([0, -3.25, -1.5]);
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1024) {
-        setScale(0.75); // Large screens
-        setPosition([0, -3.25, -1.5]); // Adjust position for large screens
+        setScale(0.75);
+        setPosition([0, -3.25, -1.5]);
       } else if (window.innerWidth <= 1024 && window.innerWidth > 500) {
-        setScale(0.7); // Medium screens
-        setPosition([0, -3, -1.5]); // Adjust position for medium screens
+        setScale(0.7);
+        setPosition([0, -3, -1.5]);
       } else {
-        setScale(0.45); // Small screens
-        setPosition([0, -2.5, -1.2]); // Adjust position for small screens
+        setScale(0.45);
+        setPosition([0, -2.5, -1.2]);
       }
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Initial call to set the correct scale and position
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -43,7 +43,7 @@ const Computers = () => {
       <primitive
         object={computer.scene}
         scale={scale}
-        position={position} // Adjusted position based on screen size
+        position={position}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -51,13 +51,6 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
-  const handleScrollDown = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <div className="relative w-full h-screen">
       <Canvas
@@ -79,11 +72,6 @@ const ComputersCanvas = () => {
 
         <Preload all />
       </Canvas>
-
-      {/* Down arrow button */}
-      <div className="absolute bottom-5 w-full flex justify-center items-center z-20">
-        <button onClick={handleScrollDown} className="text-white bg-gray-800 p-3 rounded-full shadow-md animate-bounce" style={{ fontSize: '24px', lineHeight: '24px' }}> Begin </button>
-      </div>
     </div>
   );
 };

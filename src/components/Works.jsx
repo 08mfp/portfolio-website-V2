@@ -45,15 +45,9 @@ const Works = () => {
 
       <div className='w-full flex'>
         <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'  >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Vivamus porta mi quis feugiat faucibus. 
-        Vestibulum eget efficitur massa, efficitur efficitur mauris. 
-        Fusce condimentum euismod fermentum. 
-        Nunc lacinia enim mattis leo luctus vehicula. 
-        Sed tempor tempor orci eu malesuada. 
-        Sed pellentesque aliquam luctus. 
-        Aenean convallis massa sit amet nibh tristique fringilla.
-        Maecenas sit amet diam augue. Nullam et lobortis ligula. 
+        I have worked on numerous projects using react, node, spring, typescrip, java, python and more, ranging from web development to database applications.
+        <br/><br/>
+        You can find some of my projects below, however the full list of projects can be found on my LinkedIn profile.
         </motion.p>
       </div>
 
