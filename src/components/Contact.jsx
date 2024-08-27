@@ -97,7 +97,7 @@ const Contact = () => {
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl border-2 border-white'  // change border here if you want
       >
         <p className={styles.sectionSubText}>Have any Questions or Opportunities?</p>
-        <h3 className={styles.sectionHeadText}>Contact Me:</h3>
+        <h3 className={styles.sectionHeadText}>Contact Me :</h3>
 
         <form
           ref={formRef}

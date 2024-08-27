@@ -6,9 +6,9 @@ import { styles } from "../styles";
 
 const Tech = () => {
   return (
-    <div>
-      <p className={`${styles.sectionSubText} text-center`}>My Skills</p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>Languages & Frameworks :</h2>
+    <div className="pt-5">
+      <p className={`${styles.sectionSubText} text-center`}>Languages & Frameworks</p>
+      <h2 className={`${styles.sectionHeadText} text-center`}> My Skills :</h2>
       <div className='flex flex-row flex-wrap justify-center gap-10'>
         {technologies.map((technology) => (
           <div className='w-28 h-28' key={technology.name}>

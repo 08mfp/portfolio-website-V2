@@ -20,7 +20,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image,})
             {designation} on {company}
           </p>
         </div>
-        <img src={image} alt={`feedback_by-${name}`} className='w-10 h-10 rounded-full object-cover border-2 border-white' />
+        <img src={image} alt={`feedback_by-${name}`} className='w-10 h-10 rounded-full object-cover' />
       </div>
     </div>
   </motion.div>
@@ -32,7 +32,7 @@ const Feedbacks = () => {
       <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px] `} >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Online Courses</p>
-          <h2 className={styles.sectionHeadText}>My Certifications</h2>
+          <h2 className={styles.sectionHeadText}>My Certifications :</h2>
         </motion.div>
       </div>
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap justify-center gap-7 `} >

@@ -1,7 +1,6 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
 
 const Computers = () => {
@@ -31,8 +30,15 @@ const Computers = () => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
-      <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
+      <hemisphereLight intensity={0.15} groundColor="black" />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow
+        shadow-mapSize={1024}
+      />
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
@@ -45,15 +51,40 @@ const Computers = () => {
 };
 
 const ComputersCanvas = () => {
-  return (
-    <Canvas frameloop='demand' shadows dpr={[1, 2]} camera={{ position: [20, 3, 5], fov: 25 }} gl={{ preserveDrawingBuffer: true }} >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-        <Computers />
-      </Suspense>
+  const handleScrollDown = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
 
-      <Preload all />
-    </Canvas>
+  return (
+    <div className="relative w-full h-screen">
+      <Canvas
+        frameloop="demand"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+        className="relative z-10"
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers />
+        </Suspense>
+
+        <Preload all />
+      </Canvas>
+
+      {/* Down arrow button */}
+      <div className="absolute bottom-5 w-full flex justify-center items-center z-20">
+        <button onClick={handleScrollDown} className="text-white bg-gray-800 p-3 rounded-full shadow-md animate-bounce" style={{ fontSize: '24px', lineHeight: '24px' }}> Begin </button>
+      </div>
+    </div>
   );
 };
 
