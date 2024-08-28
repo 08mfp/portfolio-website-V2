@@ -1,11 +1,10 @@
 # Portfolio Website V2
 
-Here is my second attempt at a portfolio website.
-
+Here is my second attempt at a portfolio website, which uses React, Vite, TailwindCSS, ThreeJS, Framer Motion, React Three Fiber, & EmailJS.
 
 ## Table of Contents
 
-- [Features](#features)
+
 - [Sample Images](#sample-images)
   - [Home Page](#home-page)
   - [About Section](#about-section)
@@ -14,10 +13,38 @@ Here is my second attempt at a portfolio website.
   - [Projects Section](#projects-section)
   - [Certifications](#certifications)
   - [Contact Page](#contact-page)
+- [Features](#features)
 - [Project Structure](#project-structure)
 - [Steps to Run the Code/Website](#steps-to-run-the-codewebsite)
 - [Learn More](#learn-more)
 - [Acknowledgement and Thank You](#acknowledgement-and-thank-you)
+
+## Sample Images
+
+### Home Page
+<img width="2055" alt="HomePage 1" src="https://github.com/user-attachments/assets/fe8b06f6-f650-418f-93cf-e1ebccc91b27">
+
+Home Page without 3D Model:
+<img width="2056" alt="HomePage 2" src="https://github.com/user-attachments/assets/b7b7180e-a3fe-42e0-9e45-712e3d3ffdb4">
+
+### About Section
+<img width="2056" alt="About Page" src="https://github.com/user-attachments/assets/28feff48-73f7-4d3b-990e-9ac5fa174276">
+
+### Experience Section
+<img width="2050" alt="Experience Page" src="https://github.com/user-attachments/assets/0e0bb9be-ed4a-4f75-908b-c7669788af3e">
+
+### Skills Section
+<img width="2056" alt="Skills Page" src="https://github.com/user-attachments/assets/77cae1d9-3e2c-48c2-9698-7b274eb0fa68">
+
+### Projects Section
+<img width="2056" alt="Projects Page" src="https://github.com/user-attachments/assets/3d7be3b9-71ca-4fe0-b043-7178db3164da">
+
+### Certifications
+<img width="2056" alt="Certifications Page" src="https://github.com/user-attachments/assets/871bde17-7eb4-4528-a64a-28db4bc9beab">
+
+### Contact Page
+<img width="2056" alt="Contact Page" src="https://github.com/user-attachments/assets/bab1ece8-cc34-420c-8a88-10442350616c">
+
 
 ## Features
 
@@ -34,29 +61,6 @@ Here is my second attempt at a portfolio website.
 - **Stars Background**: Generates moving stars at random positions using Three.js.
 
 - **Scroll Animations**: Scrolling animations implemented using Framer Motion.
-
-## Sample Images
-
-### Home Page
-*Screenshot Placeholder*
-
-### About Section
-*Screenshot Placeholder*
-
-### Experience Section
-*Screenshot Placeholder*
-
-### Skills Section
-*Screenshot Placeholder*
-
-### Projects Section
-*Screenshot Placeholder*
-
-### Certifications
-*Screenshot Placeholder*
-
-### Contact Page
-*Screenshot Placeholder*
 
 ## Project Structure
 
