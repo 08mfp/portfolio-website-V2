@@ -24,7 +24,7 @@ const App = () => {
         <section id="certifications">
           <Feedbacks />
         </section>
-        <section id="contact">
+        <section id="contact" className="relative z-0">
           <Contact />
           <StarsCanvas />
         </section>
