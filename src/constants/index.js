@@ -28,6 +28,14 @@ import {
     java,
     php,
     sql,
+    free,
+    gdg,
+    msm,
+    times,
+    timesl,
+    unics,
+
+
 
 
   } from "../assets";
@@ -97,22 +105,6 @@ import {
       icon: typescript,
     },
     {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
       name: "python",
       icon: python,
     },
@@ -125,6 +117,22 @@ import {
       icon: php,
     },
     {
+      name: "React JS",
+      icon: reactjs,
+    },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: tailwind,
+    },
+    {
+      name: "git",
+      icon: git,
+    },
+    {
       name: "sql",
       icon: sql,
     },
@@ -134,8 +142,8 @@ import {
     {
       title: "Freelance Web Developer",
       company_name: "Freelance",
-      icon: shopify,
-      iconBg: "#383E56",
+      icon: free,
+      iconBg: "#F9C87D",
       date: "Jan 2024 - Jul 2024 (7 months)",
       points: [
         "Collaborated with small/medium companies to deliver tailored solutions, including front-end projects such as advertising websites and back-end projects such as company management databases.",
@@ -145,8 +153,8 @@ import {
     {
       title: "Mentee",
       company_name: "GDG Academy",
-      icon: starbucks,
-      iconBg: "#383E56",
+      icon: gdg,
+      iconBg: "#FFFFFF",
       date: "Feb 2024 - Jul 2024 (6 months)",
       points: [
         "Mentored by a Software Engineer & Engineering Manager to learn agile methodologies (Scrum and Kanban), conduct code reviews, manage pull requests, and understand pipeline processes for continuous integration",
@@ -156,8 +164,8 @@ import {
     {
       title: "Simulations Team & Artificial Intelligence Engineer",
       company_name: "Manchester Stinger Motorsports",
-      icon: tesla,
-      iconBg: "#E6DEDD",
+      icon: msm,
+      iconBg: "#A349A4",
       date: "Oct 2023 - Aug 2024 (1 year)",
       points: [
         "Researched path planning and optimization, using computer vision, C++ and machine learning to train the car to learn and navigate race tracks",
@@ -167,8 +175,8 @@ import {
     {
       title: "Software Engineer Intern",
       company_name: "The Times, News UK",
-      icon: meta,
-      iconBg: "#E6DEDD",
+      icon: times,
+      iconBg: "#000000",
       date: "Jul 2024 - Aug 2024 (2 months)",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
@@ -180,8 +188,8 @@ import {
     {
       title: "Hackathon Organiser & Web Developer",
       company_name: "UniCS Manchester",
-      icon: shopify,
-      iconBg: "#383E56",
+      icon: unics,
+      iconBg: "#61bac9",
       date: "May 2024 - Present",
       points: [
         "Planning and handling the logistics for GreatUniHack, A Hackathon attended by ~250 students.",

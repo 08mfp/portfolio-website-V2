@@ -1,9 +1,10 @@
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    // <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full min-h-[40vh] mx-auto">
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -26,7 +27,7 @@ const Hero = () => {
 
       {/* <ComputersCanvas /> */}
 
-      <div className="absolute bottom-10 w-full flex justify-center items-center">
+      {/* <div className="absolute bottom-10 w-full flex justify-center items-center">
         <button
           onClick={() =>
             window.scrollTo({
@@ -34,12 +35,12 @@ const Hero = () => {
               behavior: "smooth",
             })
           }
-          className="text-white bg-gray-800 p-3 rounded-full shadow-md animate-bounce"
+          className="text-white bg-[#915EFF] p-2 rounded-full shadow-md animate-bounce"
           style={{ fontSize: "24px", lineHeight: "24px" }}
         >
-          &#8964;
+          Begin
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

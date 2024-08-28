@@ -22,6 +22,12 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import free from "./company/free.png";
+import gdg from "./company/gdg.png";
+import msm from "./company/msm.png";
+import times from "./company/times.png";
+import timesl from "./company/timesl.png";
+import unics from "./company/unics.svg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -34,6 +40,7 @@ import python from "./tech/python.png";
 import java from "./tech/java.png";
 import php from "./tech/php.png";
 import sql from "./tech/sql.png";
+
 
 export {
   logo,
@@ -68,6 +75,13 @@ export {
   python,
   java,
   php,
-  sql
+  sql,
+  free,
+  gdg,
+  msm,
+  times,
+  timesl,
+  unics
+
 
 };
