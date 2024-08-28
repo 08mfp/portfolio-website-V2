@@ -70,17 +70,17 @@ The project is organized as follows:
   - **About.jsx**, **Contact.jsx**, **Experience.jsx**, **Feedbacks.jsx**, **Hero.jsx**, **Loader.jsx**, **Navbar.jsx**, **Tech.jsx**, **Works.jsx**: Core UI components for each section of the website.
   - **index.js**: Central entry point for importing components.
 
-- **src/constants**: Contains constant values used across the application.
-  - `index.js`: Main entry point for constants.
+- **src/constants**: Contains the data and information.
+  - `index.js`: Main entry point for all data.
 
 - **src/hoc**: Higher Order Components for wrapping and enhancing existing components.
   - `index.js`, `SectionWrapper.jsx`: HOC components to structure and manage sections.
 
 - **src/utils**: Utility functions and helpers used throughout the project.
-  - `App.jsx`, `index.css`, `main.jsx`, `styles.js`: Core utility files managing application logic and styling.
+  - `App.jsx`, `index.css`, `main.jsx`, `styles.js`: Utility files managing application logic and styling.
 
 - **src/App.jsx**: Main application file.
-- **src/index.jsx**: Entry point of the application.
+- **src/index.jsx**: application file.
 
 ## Steps to Run the Code/Website
 
