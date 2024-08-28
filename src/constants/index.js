@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import {
     mobile,
     backend,
@@ -70,19 +71,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Front-End Development",
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
+      title: "Back-End Development",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Data Analysis",
+      icon: mobile,
+    },
+    {
+      title: "UI/UX Design",
       icon: creator,
     },
   ];
@@ -261,7 +262,103 @@ import {
       source_code_link: "https://github.com/08mfp/rhodesville-villas",
     },
     {
-      name: "Portfolio Website V1",
+      name: "Events & Venue Management Website",
+      description:
+        "An Events & Venue Management Website, using Java and Spring framework for the backend operations. Enabled users to view upcoming and past events in their area and participate in discussions to promote community engagement",
+      tags: [
+        {
+          name: "java",
+          color: "blue-text-gradient",
+        },
+
+        {
+          name: "Spring Framework",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Spring MVC",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: eventlite,
+      source_code_link: "https://github.com/08mfp/eventlite",
+    },
+    {
+      name: "Python Messaging Application",
+      description:
+        "A Python-based server and client application with GUIs using Tkinter and customtkinter libraries. The server GUI audits all messages and commands, while the client GUI facilitates user messaging.",
+      tags: [
+        {
+          name: "python",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tkinter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Networking",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Client-Server Architecture",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Threading",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Concurrency",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: pythonapp,
+      source_code_link: "https://github.com/08mfp/Python-Messaging-Program-V2",
+    },
+    {
+      name: "Company Management Database",
+      description:
+        "A company database website using SQL, PHP, HTML, and CSS to track employee records, product inventories, orders, delivery logistics, customer data, departmental structures, and (minimal) ex-employee data",
+      tags: [
+        {
+          name: "sql",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "php",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Database Normalisation",
+          color: "green-text-gradient",
+        },
+        {
+          name: "PHPmyAdmin",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: cms,
+      source_code_link: "https://github.com/08mfp/eventlite",
+    },
+    {
+      name: "Portfolio V1",
       description:
         "My first attempt at a personal portfolio website which was built from scratch to showcase my skills and projects. Created using Typescript and NextJS.",
       tags: [
@@ -286,7 +383,7 @@ import {
       source_code_link: "https://github.com/08mfp/react-portfolio",
     },
     {
-      name: "Prayer Timings Website",
+      name: "Schedule & Timings Website",
       description:
         "A website that includes status indicators (Now, Soon, Finished) to allow visitors to get a quick overview, and a countdown page to allow for journey planning, pulling data from a JSON file daily to update Prayer Times",
       tags: [
@@ -296,6 +393,10 @@ import {
         },
         {
           name: "typescript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
           color: "blue-text-gradient",
         },
         {
@@ -309,73 +410,6 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/08mfp/Galaxy-Visualisation-Website",
-    },
-    {
-      name: "Python Messaging Application",
-      description:
-        "A Python-based server and client application with GUIs using Tkinter and customtkinter libraries. The server GUI audits all messages and commands, while the client GUI facilitates user messaging.",
-      tags: [
-        {
-          name: "react.js",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "typescript",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "JSON",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: pythonapp,
-      source_code_link: "https://github.com/08mfp/Python-Messaging-Program-V2",
-    },
-    {
-      name: "Events & Venue Management Website",
-      description:
-        "An Events & Venue Management Website, using Java and Spring framework for the backend operations. Enabled users to view upcoming and past events in their area and participate in discussions to promote community engagement",
-      tags: [
-        {
-          name: "Java",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Spring",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: eventlite,
-      source_code_link: "https://github.com/08mfp/eventlite",
-    },
-    {
-      name: "Company Management Database",
-      description:
-        "A company database website using SQL, PHP, HTML, and CSS to track employee records, product inventories, orders, delivery logistics, customer data, departmental structures, and (minimal) ex-employee data",
-      tags: [
-        {
-          name: "Java",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Spring",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: cms,
-      source_code_link: "https://github.com/08mfp/eventlite",
     },
   ];
   
