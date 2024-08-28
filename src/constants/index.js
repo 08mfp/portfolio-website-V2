@@ -324,93 +324,93 @@ import {
       image: pythonapp,
       source_code_link: "https://github.com/08mfp/Python-Messaging-Program-V2",
     },
-    {
-      name: "Company Management Database",
-      description:
-        "A company database website using SQL, PHP, HTML, and CSS to track employee records, product inventories, orders, delivery logistics, customer data, departmental structures, and (minimal) ex-employee data",
-      tags: [
-        {
-          name: "sql",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "php",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Database Normalisation",
-          color: "green-text-gradient",
-        },
-        {
-          name: "PHPmyAdmin",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "HTML",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: cms,
-      source_code_link: "https://github.com/08mfp/eventlite",
-    },
-    {
-      name: "Portfolio V1",
-      description:
-        "My first attempt at a personal portfolio website which was built from scratch to showcase my skills and projects. Created using Typescript and NextJS.",
-      tags: [
-        {
-          name: "react.js",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Vite",
-          color: "green-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "pink-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/08mfp/react-portfolio",
-    },
-    {
-      name: "Schedule & Timings Website",
-      description:
-        "A website that includes status indicators (Now, Soon, Finished) to allow visitors to get a quick overview, and a countdown page to allow for journey planning, pulling data from a JSON file daily to update Prayer Times",
-      tags: [
-        {
-          name: "react.js",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "typescript",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "JSON",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/08mfp/Galaxy-Visualisation-Website",
-    },
+    // {
+    //   name: "Company Management Database",
+    //   description:
+    //     "A company database website using SQL, PHP, HTML, and CSS to track employee records, product inventories, orders, delivery logistics, customer data, departmental structures, and (minimal) ex-employee data",
+    //   tags: [
+    //     {
+    //       name: "sql",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "php",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "Database Normalisation",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "PHPmyAdmin",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //     {
+    //       name: "HTML",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: cms,
+    //   source_code_link: "https://github.com/08mfp/eventlite",
+    // },
+    // {
+    //   name: "Portfolio V1",
+    //   description:
+    //     "My first attempt at a personal portfolio website which was built from scratch to showcase my skills and projects. Created using Typescript and NextJS.",
+    //   tags: [
+    //     {
+    //       name: "react.js",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "Vite",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "javascript",
+    //       color: "pink-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: jobit,
+    //   source_code_link: "https://github.com/08mfp/react-portfolio",
+    // },
+    // {
+    //   name: "Schedule & Timings Website",
+    //   description:
+    //     "A website that includes status indicators (Now, Soon, Finished) to allow visitors to get a quick overview, and a countdown page to allow for journey planning, pulling data from a JSON file daily to update Prayer Times",
+    //   tags: [
+    //     {
+    //       name: "react.js",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "typescript",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "javascript",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "JSON",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "tailwind css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/08mfp/Galaxy-Visualisation-Website",
+    // },
   ];
   
   export { services, technologies, experiences, testimonials, projects };
