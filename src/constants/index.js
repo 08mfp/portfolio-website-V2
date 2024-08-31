@@ -141,36 +141,15 @@ import {
   
   const experiences = [
     {
-      title: "Freelance Web Developer",
-      company_name: "Freelance",
-      icon: free,
-      iconBg: "#F9C87D",
-      date: "Jan 2024 - Jul 2024 (7 months)",
+      title: "Front-End Web Developer",
+      company_name: "UniCS Manchester",
+      icon: unics,
+      iconBg: "#61bac9",
+      date: "May 2024 - Present",
       points: [
-        "Collaborated with small/medium companies to deliver tailored solutions, including front-end projects such as advertising websites and back-end projects such as company management databases.",
-        "Worked with clients to ensure each product meets their specifications and needs, prioritising satisfaction and profitable outcomes.",
-      ],
-    },
-    {
-      title: "Mentee",
-      company_name: "GDG Academy",
-      icon: gdg,
-      iconBg: "#FFFFFF",
-      date: "Feb 2024 - Jul 2024 (6 months)",
-      points: [
-        "Mentored by a Software Engineer & Engineering Manager to learn agile methodologies (Scrum and Kanban), conduct code reviews, manage pull requests, and understand pipeline processes for continuous integration",
-        "Developed industry-standard practices including safe coding techniques, time management, and collaboration within cross-functional teams involving departments like marketing and product development.",
-      ],
-    },
-    {
-      title: "Simulations Team & Artificial Intelligence Engineer",
-      company_name: "Manchester Stinger Motorsports",
-      icon: msm,
-      iconBg: "#A349A4",
-      date: "Oct 2023 - Aug 2024 (1 year)",
-      points: [
-        "Researched path planning and optimization, using computer vision, C++ and machine learning to train the car to learn and navigate race tracks",
-        "Experimented with using onboard cameras to allow the race car to create and follow racing lines based on real-time input.",
+        "Planning and handling the logistics for GreatUniHack, A Hackathon attended by ~250 students.",
+        "Managing a budget of £7,000 pounds across merchandise, venue, food, and equipment.",
+        "Developing the hackathon's website using Javascript & NextJS.",
       ],
     },
     {
@@ -187,15 +166,36 @@ import {
       ],
     },
     {
-      title: "Hackathon Organiser & Web Developer",
-      company_name: "UniCS Manchester",
-      icon: unics,
-      iconBg: "#61bac9",
-      date: "May 2024 - Present",
+      title: "Simulations Team & Artificial Intelligence Engineer",
+      company_name: "Manchester Stinger Motorsports",
+      icon: msm,
+      iconBg: "#A349A4",
+      date: "Oct 2023 - Aug 2024 (1 year)",
       points: [
-        "Planning and handling the logistics for GreatUniHack, A Hackathon attended by ~250 students.",
-        "Managing a budget of £7,000 pounds across merchandise, venue, food, and equipment.",
-        "Developing the hackathon's website using Javascript & NextJS.",
+        "Researched path planning and optimization, using computer vision, C++ and machine learning to train the car to learn and navigate race tracks",
+        "Experimented with using onboard cameras to allow the race car to create and follow racing lines based on real-time input.",
+      ],
+    },
+    {
+      title: "Mentee",
+      company_name: "GDG Academy",
+      icon: gdg,
+      iconBg: "#FFFFFF",
+      date: "Feb 2024 - Jul 2024 (6 months)",
+      points: [
+        "Mentored by a Software Engineer & Engineering Manager to learn agile methodologies (Scrum and Kanban), conduct code reviews, manage pull requests, and understand pipeline processes for continuous integration",
+        "Developed industry-standard practices including safe coding techniques, time management, and collaboration within cross-functional teams involving departments like marketing and product development.",
+      ],
+    },
+    {
+      title: "Freelance Web Developer",
+      company_name: "Freelance",
+      icon: free,
+      iconBg: "#F9C87D",
+      date: "Jan 2024 - Jul 2024 (7 months)",
+      points: [
+        "Collaborated with small/medium companies to deliver tailored solutions, including front-end projects such as advertising websites and back-end projects such as company management databases.",
+        "Worked with clients to ensure each product meets their specifications and needs, prioritising satisfaction and profitable outcomes.",
       ],
     },
   ];
