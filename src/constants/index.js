@@ -147,9 +147,9 @@ import {
       iconBg: "#61bac9",
       date: "May 2024 - Present",
       points: [
-        "Planning and handling the logistics for GreatUniHack, A Hackathon attended by ~250 students.",
-        "Managing a budget of £7,000 pounds across merchandise, venue, food, and equipment.",
         "Developing the hackathon's website using Javascript & NextJS.",
+        "Planning and handling the logistics for GreatUniHack, A Hackathon attended by ~250 students.",
+        "Managing a budget of £7,000 across merchandise, venue, food, and equipment.",
       ],
     },
     {
@@ -172,7 +172,7 @@ import {
       iconBg: "#A349A4",
       date: "Oct 2023 - Aug 2024 (1 year)",
       points: [
-        "Researched path planning and optimization, using computer vision, C++ and machine learning to train the car to learn and navigate race tracks",
+        "Researched path planning and optimization, using computer vision, C++ and machine learning to train the car to learn and navigate race tracks.",
         "Experimented with using onboard cameras to allow the race car to create and follow racing lines based on real-time input.",
       ],
     },
@@ -183,7 +183,7 @@ import {
       iconBg: "#FFFFFF",
       date: "Feb 2024 - Jul 2024 (6 months)",
       points: [
-        "Mentored by a Software Engineer & Engineering Manager to learn agile methodologies (Scrum and Kanban), conduct code reviews, manage pull requests, and understand pipeline processes for continuous integration",
+        "Mentored by a Software Engineer & Engineering Manager to learn agile methodologies (Scrum and Kanban), conduct code reviews, manage pull requests, and understand pipeline processes for continuous integration.",
         "Developed industry-standard practices including safe coding techniques, time management, and collaboration within cross-functional teams involving departments like marketing and product development.",
       ],
     },

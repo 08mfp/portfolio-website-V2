@@ -45,7 +45,7 @@ const Works = () => {
 
       <div className='w-full flex'>
         <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'  >
-        I have worked on numerous projects using react, node, spring, typescrip, java, python and more, ranging from web development to database applications.
+        I have worked on numerous projects using react, node, spring, typescript, java, python and more, ranging from web development to database applications.
         <br/><br/>
         You can find some of my projects below, however the full list of projects can be found on my LinkedIn profile.
         </motion.p>
