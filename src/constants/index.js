@@ -157,7 +157,7 @@ import {
       company_name: "The Times, News UK",
       icon: times,
       iconBg: "#000000",
-      date: "Jul 2024 - Aug 2024 (2 months)",
+      date: "Jul 2024 - Sep 2024 (2 months)",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -170,7 +170,7 @@ import {
       company_name: "Manchester Stinger Motorsports",
       icon: msm,
       iconBg: "#A349A4",
-      date: "Oct 2023 - Aug 2024 (1 year)",
+      date: "Sep 2023 - Aug 2024 (1 year)",
       points: [
         "Researched path planning and optimization, using computer vision, C++ and machine learning to train the car to learn and navigate race tracks.",
         "Experimented with using onboard cameras to allow the race car to create and follow racing lines based on real-time input.",
