@@ -141,11 +141,4 @@ For further reading and advanced topics:
 - [Create React App Documentation](https://facebook.github.io/create-react-app/docs/getting-started) - Comprehensive guide on using Create React App.
 - [React Documentation](https://reactjs.org/) - Official React documentation for learning more about React and its ecosystem.
 
-## Acknowledgement and Thank You
 
-This project was developed with the help of a tutorial provided by **JavaScript Mastery**. A big thank you to **Adrian Hajdin** for his detailed tutorial and open-source contributions.
-
-- **GitHub**: [Adrian Hajdin's GitHub](https://github.com/adrianhajdin)
-- **Project Repository**: [3D Developer Portfolio Repo](https://github.com/adrianhajdin/project_3D_developer_portfolio)
-- **YouTube Channel**: [JavaScript Mastery YouTube](https://www.youtube.com/@javascriptmastery/videos)
-- **YouTube Video Tutorial**: [Watch the Tutorial](https://youtu.be/0fYi8SGA20k)
