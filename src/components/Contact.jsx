@@ -20,8 +20,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [confirmationMessage, setConfirmationMessage] = useState("");
 
-  const nameRegEx = /^[a-zA-Z]+ [a-zA-Z]+$/;  // first and last name
-  const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  //  email format - chatgpt
+  const nameRegEx = /^[a-zA-Z]+ [a-zA-Z]+$/;
+  const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleChange = (e) => {
     const { target } = e;
@@ -54,7 +54,7 @@ const Contact = () => {
       case "message":
         setErrors({
           ...errors,
-          message: !value ? "This field is required" : value.trim().split(" ").length < 15 ? "Message must be at least 15 words" : "",
+          message: !value ? "This field is required" : value.trim().split(" ").length < 10 ? "Message must be at least 10 words" : "",
         });
         break;
       default:
@@ -63,74 +63,73 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const newErrors = {};
+    const newErrors = {};
 
-  if (!form.name) {
-    newErrors.name = "This field is required";
-  } else if (!nameRegEx.test(form.name)) {
-    newErrors.name = "Please enter your first and last name";
-  }
+    if (!form.name) {
+      newErrors.name = "This field is required";
+    } else if (!nameRegEx.test(form.name)) {
+      newErrors.name = "Please enter your first and last name";
+    }
 
-  if (!form.email) {
-    newErrors.email = "This field is required";
-  } else if (!emailRegEx.test(form.email)) {
-    newErrors.email = "Please enter a valid email";
-  }
+    if (!form.email) {
+      newErrors.email = "This field is required";
+    } else if (!emailRegEx.test(form.email)) {
+      newErrors.email = "Please enter a valid email";
+    }
 
-  if (!form.subject) {
-    newErrors.subject = "This field is required";
-  }
+    if (!form.subject) {
+      newErrors.subject = "This field is required";
+    }
 
-  if (!form.message) {
-    newErrors.message = "This field is required";
-  } else if (form.message.trim().split(" ").length < 15) {
-    newErrors.message = "Message must be at least 15 words";
-  }
+    if (!form.message) {
+      newErrors.message = "This field is required";
+    } else if (form.message.trim().split(" ").length < 10) {
+      newErrors.message = "Message must be at least 10 words";
+    }
 
-  if (Object.keys(newErrors).length > 0) {
-    setErrors(newErrors);
-    return;
-  }
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
 
-  setLoading(true);
+    setLoading(true);
 
-  emailjs
-    .send(
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-      {
-        to_name: form.name,
-        from_name: "Mohamed Farid",
-        from_email: form.email,
-        to_email: "mohfarid1webdev@gmail.com",
-        subject: form.subject,
-        message: form.message,
-      },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-    )
-    .then(
-      () => {
-        setLoading(false);
-        setConfirmationMessage("Your email has been sent successfully!");
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          to_name: form.name,
+          from_name: "Mohamed Farid",
+          from_email: form.email,
+          to_email: "mohfarid1webdev@gmail.com",
+          subject: form.subject,
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          setConfirmationMessage("Your email has been sent successfully!");
 
-        setForm({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-        setErrors({});
-      },
-      (error) => {
-        setLoading(false);
-        setConfirmationMessage("Sorry, something went wrong. Please try again.");
-        console.error(error);
-      }
-    );
-};
-
+          setForm({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+          setErrors({});
+        },
+        (error) => {
+          setLoading(false);
+          setConfirmationMessage("Sorry, something went wrong. Please try again.");
+          console.error(error);
+        }
+      );
+  };
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
@@ -140,12 +139,6 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Have any Questions or Opportunities?</p>
         <h3 className={styles.sectionHeadText}>Contact Me :</h3>
-
-        {confirmationMessage && (
-          <p className="mt-4 text-center text-lg font-semibold text-green-500">
-            {confirmationMessage}
-          </p>
-        )}
 
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
@@ -207,6 +200,12 @@ const Contact = () => {
             />
             {errors.message && <span className="text-red-600">{errors.message}</span>}
           </label>
+
+          {confirmationMessage && (
+            <p className="mt-4 text-center text-lg font-semibold text-green-500">
+              {confirmationMessage}
+            </p>
+          )}
 
           <button
             type='submit'
