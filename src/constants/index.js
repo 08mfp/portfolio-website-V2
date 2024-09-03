@@ -211,7 +211,7 @@ import {
       ],
     },
     {
-      title: "Freelance Web Developer",
+      title: "Freelance Developer",
       company_name: "Freelance",
       icon: free,
       iconBg: "#F9C87D",
