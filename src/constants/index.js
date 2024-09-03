@@ -255,8 +255,12 @@ import {
       name: "Interactive Property Listings Website",
       description:
         "The website includes a gallery that allows users to filter images based on category, a section describing all the amenities offered, a real-time apartment availability checker, and a 3D interactive map (built with the Mapbox API) featuring custom clickable icons.",
-      longDescription:
-        "This project was designed to provide a comprehensive solution for property management and listing. The platform allows users to filter images based on various categories, view detailed property amenities, and check real-time availability of apartments. It also integrates a 3D interactive map using the Mapbox API, featuring custom icons for each property. The backend is powered by Node.js with a REST API, and the frontend is built using React.js and TypeScript, ensuring a smooth and responsive user experience.",
+      longDescription: [
+        "Developing a responsive user interface using React.js and Next.js.",
+        "Creating dynamic and interactive web applications.",
+        "Ensuring cross-browser compatibility and mobile responsiveness.",
+        "Optimizing website performance for faster load times.",
+      ],
       tags: [
         {
           name: "react.js",
@@ -286,13 +290,18 @@ import {
       image: carrent,
       images: [carrent, eventlite, pythonapp],
       source_code_link: "https://github.com/08mfp/rhodesville-villas",
+      live_demo_link: "https://example.com/live-demo",
     },
     {
       name: "Events & Venue Management Website",
       description:
-        "An Events & Venue Management Website, using Java and Spring framework for the backend operations. Enabled users to view upcoming and past events in their area and participate in discussions to promote community engagement.",
-      longDescription:
-        "This project provides a robust platform for managing events and venues. Users can view details of upcoming and past events, and participate in discussions to foster community engagement. The backend is built with Java and the Spring Framework, ensuring scalability and performance. It supports event creation, venue management, and integrates with external APIs for features like event notifications and calendar integration. The frontend is styled with CSS and HTML, providing a clean and intuitive user interface.",
+        "An Events & Venue Management Website, using Java and Spring framework for the backend operations.",
+      longDescription: [
+        "Managing events and venues with a robust platform.",
+        "Viewing details of upcoming and past events.",
+        "Supporting event creation and venue management.",
+        "Integrating external APIs for event notifications and calendar.",
+      ],
       tags: [
         {
           name: "java",
@@ -318,13 +327,18 @@ import {
       image: eventlite,
       images: [carrent, eventlite, pythonapp],
       source_code_link: "https://github.com/08mfp/eventlite",
+      live_demo_link: "https://example.com/live-demo",
     },
     {
       name: "Python Messaging Application",
       description:
-        "A Python-based server and client application with GUIs using Tkinter and customtkinter libraries. The server GUI audits all messages and commands, while the client GUI facilitates user messaging.",
-      longDescription:
-        "This project involves creating a messaging system using Python. The server application is capable of auditing all messages and commands sent between clients. The client application features a user-friendly GUI built with Tkinter and customtkinter libraries, enabling easy communication between users. The system supports multi-threading to handle multiple clients simultaneously, ensuring smooth and responsive messaging. It also includes features like real-time message updates, user authentication, and message logging.",
+        "A Python-based server and client application with GUIs using Tkinter and customtkinter libraries.",
+      longDescription: [
+        "Creating a messaging system using Python.",
+        "Auditing messages and commands on the server side.",
+        "Building user-friendly GUI with Tkinter and customtkinter.",
+        "Supporting multi-threading for handling multiple clients.",
+      ],
       tags: [
         {
           name: "python",
@@ -354,7 +368,8 @@ import {
       image: pythonapp,
       images: [carrent, eventlite, pythonapp],
       source_code_link: "https://github.com/08mfp/Python-Messaging-Program-V2",
-    },
+      live_demo_link: "https://example.com/live-demo",
+    },  
     // {
     //   name: "Company Management Database",
     //   description:

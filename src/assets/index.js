@@ -40,6 +40,7 @@ import python from "./tech/python.png";
 import java from "./tech/java.png";
 import php from "./tech/php.png";
 import sql from "./tech/sql.png";
+import web2 from "./web2.png"
 
 
 export {
@@ -81,7 +82,8 @@ export {
   msm,
   times,
   timesl,
-  unics
+  unics,
+  web2,
 
 
 };
