@@ -19,6 +19,9 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
+  const nameRegEx = /^[a-zA-Z]+ [a-zA-Z]+$/;  // first and last name
+  const emailRegEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Valid email format - help w chatgpt
+
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -27,11 +30,35 @@ const Contact = () => {
       ...form,
       [name]: value,
     });
-
-    setErrors({
-      ...errors,
-      [name]: !value ? "This field is required" : "",
-    });
+    
+    switch (name) {
+      case "name":
+        setErrors({
+          ...errors,
+          name: !value ? "This field is required" : !nameRegEx.test(value) ? "Please enter your first and last name" : "",
+        });
+        break;
+      case "email":
+        setErrors({
+          ...errors,
+          email: !value ? "This field is required" : !emailRegEx.test(value) ? "Please enter a valid email" : "",
+        });
+        break;
+      case "subject":
+        setErrors({
+          ...errors,
+          subject: !value ? "This field is required" : "",
+        });
+        break;
+      case "message":
+        setErrors({
+          ...errors,
+          message: !value ? "This field is required" : value.trim().split(" ").length < 10 ? "Message must be at least 10 words" : "",
+        });
+        break;
+      default:
+        break;
+    }
   };
 
   const handleSubmit = (e) => {
@@ -39,14 +66,30 @@ const Contact = () => {
 
     const newErrors = {};
 
-    if (!form.name) newErrors.name = "This field is required";
-    if (!form.email) newErrors.email = "This field is required";
-    if (!form.subject) newErrors.subject = "This field is required";
-    if (!form.message) newErrors.message = "This field is required";
+    if (!form.name) {
+      newErrors.name = "This field is required";
+    } else if (!nameRegEx.test(form.name)) {
+      newErrors.name = "Please enter your first and last name";
+    }
+
+    if (!form.email) {
+      newErrors.email = "This field is required";
+    } else if (!emailRegEx.test(form.email)) {
+      newErrors.email = "Please enter a valid email";
+    }
+
+    if (!form.subject) {
+      newErrors.subject = "This field is required";
+    }
+
+    if (!form.message) {
+      newErrors.message = "This field is required";
+    } else if (form.message.trim().split(" ").length < 15) {
+      newErrors.message = "Message must be at least 15 words";
+    }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      // alert("Please fill in all the fields before submitting.");
       return;
     }
 
@@ -89,21 +132,15 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-black-100 p-8 rounded-2xl border-2 border-white'  // change border here if you want
+        className='flex-[0.75] bg-black-100 p-8 rounded-2xl border-2 border-white'
       >
         <p className={styles.sectionSubText}>Have any Questions or Opportunities?</p>
         <h3 className={styles.sectionHeadText}>Contact Me :</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -135,18 +172,18 @@ const Contact = () => {
           </label>
 
           <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Subject</span>
-              <input
-                type='text'
-                name='subject'
-                value={form.subject}
-                onChange={handleChange}
-                placeholder='Question. Opportunity. Anything!'
-                className={`py-4 px-6 rounded-lg outline-none border-none font-medium ${
-                  errors.subject ? "bg-red-200 placeholder:text-red-600" : "bg-white placeholder:text-secondary text-tertiary"
-                }`}
-              />
-              {errors.subject && <span className="text-red-600">{errors.subject}</span>}
+            <span className='text-white font-medium mb-4'>Subject</span>
+            <input
+              type='text'
+              name='subject'
+              value={form.subject}
+              onChange={handleChange}
+              placeholder='Question. Opportunity. Anything!'
+              className={`py-4 px-6 rounded-lg outline-none border-none font-medium ${
+                errors.subject ? "bg-red-200 placeholder:text-red-600" : "bg-white placeholder:text-secondary text-tertiary"
+              }`}
+            />
+            {errors.subject && <span className="text-red-600">{errors.subject}</span>}
           </label>
 
           <label className='flex flex-col'>
@@ -177,7 +214,6 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        
         <EarthCanvas />
       </motion.div>
     </div>
