@@ -119,7 +119,7 @@ const ProjectCard = ({ index, name, description, longDescription, tags, image, i
               <h3 className='text-white text-[24px] font-bold text-center mb-4 mt-5'>{name}</h3>
               <ul className='text-secondary text-[14px] list-disc list-inside'>
                 {longDescription.map((bullet, idx) => (
-                  <li key={idx}>{bullet}</li>
+                  <li key={idx} className='mb-2'>{bullet}</li>
                 ))}
               </ul>
               <div className='mt-4 flex flex-wrap gap-2'>
