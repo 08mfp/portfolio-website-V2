@@ -71,22 +71,45 @@ import {
   
   const services = [
     {
-      title: "Front-End Development",
-      icon: web,
+        title: "Front-End Development",
+        icon: web,
+        points: [
+            "I have developed dynamic and interactive web applications using React.js, Next.js, or Spring.",
+            "I have incorporated website animations such as loading skeletons and scroll animations.",
+            "I have used external libraries such as Vite, and frameworks such as TailwindCSS.",
+            "I have ensured cross-browser compatibility and mobile responsiveness.",
+        ],
     },
     {
-      title: "Back-End Development",
-      icon: backend,
+        title: "Back-End Development",
+        icon: backend,
+        points: [
+            "I built a Python messaging program, which used sockets to allow private and group messaging, with server auditing.",
+            "I created a NodeJS Back-End Server which is responsible for providing JSON data to my website's Front-End.",
+            "I impremented password protection on the server to ensure the data is kept secure.",
+            "I have worked with APIs (such as my Wedding Reservation Management Program).",
+            "I developed a company database using MySQL & PHPMyAdmin, implementing CRUD functionality and a complex query feature",
+        ],
     },
     {
-      title: "Data Analysis",
-      icon: mobile,
+        title: "Data Analysis",
+        icon: mobile,
+        points: [
+            "I have used a Naive Bayes classifier (with a train/test split) using Pandas and Matplotlib to detect and filter spam emails.",
+            "I worked with Gradient Descent, MLP Regression, and Neural Networks (using Jupyter) for my Machine Learning Coursework in University.",
+            "I have experimented with training and comparing machine learning models using SGD and ADAM to determine it's strengths and weaknesses."
+        ],
     },
     {
-      title: "UI/UX Design",
-      icon: creator,
+        title: "UI/UX Design",
+        icon: creator,
+        points: [
+            "I have designed user-friendly interfaces that prioritize usability and accessibility.",
+            "I have experience with user research and A/B testing to steer design decisions.",
+            "I have experimented wireframes and mockups to visualize designs.",
+        ],
     },
-  ];
+];
   
   const technologies = [
     {
