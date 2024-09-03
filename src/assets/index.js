@@ -40,7 +40,22 @@ import python from "./tech/python.png";
 import java from "./tech/java.png";
 import php from "./tech/php.png";
 import sql from "./tech/sql.png";
-import web2 from "./web2.png"
+import web2 from "./web2.png";
+
+import property16 from './property/16property.png';
+import property17 from './property/17property.png';
+import property18 from './property/18property.png';
+import property19 from './property/19property.png';
+import property20 from './property/20property.png';
+import property21 from './property/21property.png';
+import property22 from './property/22property.png';
+import property23 from './property/23property.png';
+
+import event1 from './events/event1.png'
+import event2 from './events/event2.png'
+import event3 from './events/event3.png'
+import event4 from './events/event4.png'
+import event5 from './events/event5.png'
 
 
 export {
@@ -84,6 +99,20 @@ export {
   timesl,
   unics,
   web2,
+  property16,
+  property17,
+  property18,
+  property19,
+  property20,
+  property21,
+  property22,
+  property23,
+  event1,
+  event2,
+  event3,
+  event4,
+  event5,
+
 
 
 };

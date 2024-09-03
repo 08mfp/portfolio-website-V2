@@ -35,6 +35,19 @@ import {
     times,
     timesl,
     unics,
+    property16,
+    property17,
+    property18,
+    property19,
+    property20,
+    property21,
+    property22,
+    property23,
+    event1,
+    event2,
+    event3,
+    event4,
+    event5,
 
 
 
@@ -254,12 +267,12 @@ import {
     {
       name: "Interactive Property Listings Website",
       description:
-        "The website includes a gallery that allows users to filter images based on category, a section describing all the amenities offered, a real-time apartment availability checker, and a 3D interactive map (built with the Mapbox API) featuring custom clickable icons.",
+        "A Property Listings Website for potential clients secured through a password-protected back-end server.",
       longDescription: [
-        "Developing a responsive user interface using React.js and Next.js.",
-        "Creating dynamic and interactive web applications.",
-        "Ensuring cross-browser compatibility and mobile responsiveness.",
-        "Optimizing website performance for faster load times.",
+        "The Website presents a modern interface including light mode and dark mode. It is also able to track simple analytics.",
+        "Includes an image gallery, a real-time apartment availability checker, and a 3D interactive map.",
+        "All website information is fetched from a back-end server, which is password protected to ensure the data is kept secure.",
+        "Website includes loading skeletons while the website fetches data from the back end, keeping the user informed.",
       ],
       tags: [
         {
@@ -275,20 +288,12 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "RestAPI",
-          color: "green-text-gradient",
-        },
-        {
-          name: "javascript",
-          color: "pink-text-gradient",
-        },
-        {
           name: "tailwind css",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      images: [carrent, eventlite, pythonapp],
+      image: property16,
+      images: [property16, property17, property17, property18, property19, property20, property21, property22, property23 ],
       source_code_link: "https://github.com/08mfp/rhodesville-villas",
       live_demo_link: "https://example.com/live-demo",
     },
@@ -297,10 +302,10 @@ import {
       description:
         "An Events & Venue Management Website, using Java and Spring framework for the backend operations.",
       longDescription: [
-        "Managing events and venues with a robust platform.",
-        "Viewing details of upcoming and past events.",
-        "Supporting event creation and venue management.",
-        "Integrating external APIs for event notifications and calendar.",
+        "Includes interactive maps, event scheduling, and a discussion board, inspired by EventBrite.",
+        "Allows users to view upcoming and past events in their area and participate in discussions.",
+        "Includes security restrictions, only providing administrators with CRUD functionality.",
+        "Integrated Mastdon APIs for event discussions and forumns.",
       ],
       tags: [
         {
@@ -308,11 +313,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "Spring Framework",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Spring MVC",
+          name: "Spring",
           color: "green-text-gradient",
         },
         {
@@ -325,7 +326,7 @@ import {
         },
       ],
       image: eventlite,
-      images: [carrent, eventlite, pythonapp],
+      images: [ event1,event2, event3, event4, event5,],
       source_code_link: "https://github.com/08mfp/eventlite",
       live_demo_link: "https://example.com/live-demo",
     },
@@ -334,9 +335,9 @@ import {
       description:
         "A Python-based server and client application with GUIs using Tkinter and customtkinter libraries.",
       longDescription: [
-        "Creating a messaging system using Python.",
-        "Auditing messages and commands on the server side.",
-        "Building user-friendly GUI with Tkinter and customtkinter.",
+        "Python server and client application with GUIs using Tkinter and customtkinter libraries.",
+        "Server GUI audits all traffic, whilst client GUI facilitates user messaging.",
+        "Implemented unique username registrations, private and group messaging.",
         "Supporting multi-threading for handling multiple clients.",
       ],
       tags: [
@@ -349,16 +350,8 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "Networking",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Client-Server Architecture",
-          color: "green-text-gradient",
-        },
-        {
           name: "Threading",
-          color: "pink-text-gradient",
+          color: "green-text-gradient",
         },
         {
           name: "Concurrency",
@@ -366,7 +359,7 @@ import {
         },
       ],
       image: pythonapp,
-      images: [carrent, eventlite, pythonapp],
+      images: [pythonapp, pythonapp, pythonapp],
       source_code_link: "https://github.com/08mfp/Python-Messaging-Program-V2",
       live_demo_link: "https://example.com/live-demo",
     },  
