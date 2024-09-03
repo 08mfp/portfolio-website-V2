@@ -76,10 +76,8 @@ const About = () => {
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         Hi There! I am a final-year Computer Science student, graduating in July 2025.
-        I am looking for Software Engineering graduate roles. 
-        I am experienced in Front & Back-end development, 
-        with professional experience as a software engineer intern at The Times.
-        I have created this website to showcase some of my skills, projects and experiences.
+        <br/>
+        I am looking for Software Engineering graduate roles, and I have created this website to showcase some of my skills, projects and experiences.
         </motion.p>
 
       <div className="w-full flex row sm:flex-row gap-4 mt-6">

@@ -119,9 +119,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          I have worked on numerous projects using React, Node, Spring, TypeScript, Java, Python, and more, ranging from web development to database applications.
+          I have worked on numerous projects ranging from web development to database applications.
           <br /><br />
-          You can find some of my projects below; however, the full list of projects can be found on my LinkedIn profile.
+          You can read more about some of my projects below; however, the full list of projects can be found on my LinkedIn profile or on Github.
         </motion.p>
       </div>
 
