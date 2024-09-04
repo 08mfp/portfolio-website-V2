@@ -272,7 +272,7 @@ import {
         "The Website presents a modern interface including light mode and dark mode. It is also able to track simple analytics.",
         "Includes an image gallery, a real-time apartment availability checker, and a 3D interactive map.",
         "All website information is fetched from a back-end server, which is password protected to ensure the data is kept secure.",
-        "Website includes loading skeletons while the website fetches data from the back end, keeping the user informed.",
+        // "Website includes loading skeletons while the website fetches data from the back end, keeping the user informed.",
       ],
       tags: [
         {
@@ -295,7 +295,7 @@ import {
       image: property16,
       images: [property16, property17, property17, property18, property19, property20, property21, property22, property23 ],
       source_code_link: "https://github.com/08mfp/rhodesville-villas",
-      live_demo_link: "https://example.com/live-demo",
+      live_demo_link: "https://example.com",
     },
     {
       name: "Events & Venue Management Website",
@@ -305,7 +305,7 @@ import {
         "Includes interactive maps, event scheduling, and a discussion board, inspired by EventBrite.",
         "Allows users to view upcoming and past events in their area and participate in discussions.",
         "Includes security restrictions, only providing administrators with CRUD functionality.",
-        "Integrated Mastdon APIs for event discussions and forumns.",
+        // "Integrated Mastdon APIs for event discussions and forumns.",
       ],
       tags: [
         {
@@ -328,7 +328,7 @@ import {
       image: eventlite,
       images: [ event1,event2, event3, event4, event5,],
       source_code_link: "https://github.com/08mfp/eventlite",
-      live_demo_link: "https://example.com/live-demo",
+      live_demo_link: "https://example.com",
     },
     {
       name: "Python Messaging Application",
@@ -338,7 +338,7 @@ import {
         "Python server and client application with GUIs using Tkinter and customtkinter libraries.",
         "Server GUI audits all traffic, whilst client GUI facilitates user messaging.",
         "Implemented unique username registrations, private and group messaging.",
-        "Supporting multi-threading for handling multiple clients.",
+        // "Supporting multi-threading for handling multiple clients.",
       ],
       tags: [
         {
@@ -361,7 +361,7 @@ import {
       image: pythonapp,
       images: [pythonapp, pythonapp, pythonapp],
       source_code_link: "https://github.com/08mfp/Python-Messaging-Program-V2",
-      live_demo_link: "https://example.com/live-demo",
+      live_demo_link: "https://example.com",
     },  
     // {
     //   name: "Company Management Database",
